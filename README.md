@@ -31,7 +31,8 @@ react-color-extractor for extracting the dominant color from the image
 https://www.npmjs.com/package/react-color-extractor
 
 ## Sample screenshot--
-![Screenshot (201)](https://user-images.githubusercontent.com/29257206/140885142-d2dbcc24-658a-41fa-9d68-3a27b6312be5.png)
+![image](https://user-images.githubusercontent.com/29257206/140895588-b4a9bde4-df66-4f68-b2cb-77b31a9ae23a.png)
+
 
 
 
