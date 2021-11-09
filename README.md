@@ -24,9 +24,11 @@ You will also see any lint errors in the console.
 
 ## Api uses --
 Unsplash for fetching image corresponding to serch words.
+https://unsplash.com/developers
 
 ## Library used--
 react-color-extractor for extracting the dominant color from the image
+https://www.npmjs.com/package/react-color-extractor
 
 ## Sample screenshot--
 ![Screenshot (201)](https://user-images.githubusercontent.com/29257206/140885142-d2dbcc24-658a-41fa-9d68-3a27b6312be5.png)
