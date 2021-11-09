@@ -23,9 +23,9 @@ const ImageExtractor = (props) => {
     return (
         <div>
             <form onSubmit={searchPhotos}>
-                <div style={{ display: "grid", gridTemplateColumns: "20% 10%", gridGap: "0.5rem", justifyContent: "center", paddingTop: "1rem" }}>
+                <div style={{ display: "grid", gridTemplateColumns: "20% 10%", gridGap: "0.5rem", justifyContent: "center", paddingTop: "1rem" , paddingBottom:"1rem"}}>
                     <input type="text" placeholder="Search meaningful object ..." value={textentered} onChange={(e) => setTextEntered(e.target.value)}></input>
-                    <button style={{ whiteSpace: "normal" }} onClick={searchPhotos}>Search</button>
+                    <button style={{ minWidth:"fit-content" }} onClick={searchPhotos}>Search</button>
                 </div>
             </form>
             <div style={{ display: "flex", justifyContent: "center", paddingBottom: "1rem" }}>

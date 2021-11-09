@@ -31,6 +31,9 @@ const ColorExtractorComponent = (props) => {
                     key={id}
                     style={{
                         backgroundColor: color,
+                        display:"flex",
+                        justifyContent:"center",
+                        alignItems:"center",
                         gridRow:`span ${Math.floor(10*Math.random())}`
                     }}
                 >{color}
