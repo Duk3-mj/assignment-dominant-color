@@ -22,12 +22,14 @@ const ImageExtractor = (props) => {
 
     return (
         <div>
-            <div style={{display:"grid" ,gridTemplateColumns:"20% 10%",  gridGap:"0.5rem", justifyContent:"center" ,paddingTop:"1rem"}}>
-            <input type="text" placeholder="Search meaningful object ..." value={textentered} onChange={(e) => setTextEntered(e.target.value)}></input>
-            <button style={{whiteSpace:"normal"}}onClick={searchPhotos}>Search</button>
-            </div>
-            <div style={{display:"flex", justifyContent:"center" , paddingBottom:"1rem"}}>
-            <img   src={imageUrl}></img>
+            <form onSubmit={searchPhotos}>
+                <div style={{ display: "grid", gridTemplateColumns: "20% 10%", gridGap: "0.5rem", justifyContent: "center", paddingTop: "1rem" }}>
+                    <input type="text" placeholder="Search meaningful object ..." value={textentered} onChange={(e) => setTextEntered(e.target.value)}></input>
+                    <button style={{ whiteSpace: "normal" }} onClick={searchPhotos}>Search</button>
+                </div>
+            </form>
+            <div style={{ display: "flex", justifyContent: "center", paddingBottom: "1rem" }}>
+                <img src={imageUrl}></img>
             </div>
         </div>
     )
