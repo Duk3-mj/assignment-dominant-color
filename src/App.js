@@ -1,22 +1,24 @@
 import React from "react"
-import './App.css';
-import ImageExtractor from './component/ImageExtractor';
-import ColorExtractorComponent from "./component/ColorExtractorComponent"
+import UserDetails from "./Component/userDetail"
+import UserTable from "./Component/userTable"
 
 const App = () => {
-
-const[imageUrl , setImageUrl] = React.useState("")
-
+  const [userId, getUserId] = React.useState()
+  const [todoId, getTodoId] = React.useState()
+  const [todoTitle, getTodoTitle] = React.useState()
   return (
-    <div>
-      <div className="App">
-      <ImageExtractor getImageUrl={setImageUrl}></ImageExtractor>
+    <>
+      <div style={{ display: "grid", gridTemplateColumns: " 50% 50%", gridGap: "50px" }}>
+        <div>
+          <UserTable getUserId={getUserId} getTodoId={getTodoId} getTodoTitle={getTodoTitle}></UserTable>
+        </div>
+        <div>
+          <UserDetails userId={userId} todoId={todoId} todoTitle={todoTitle}></UserDetails>
+        </div>
+
       </div>
-      <div className="Pic">
-      {imageUrl !== "" && <ColorExtractorComponent ImageUrl ={imageUrl}></ColorExtractorComponent>}
-      </div>
-    </div>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App

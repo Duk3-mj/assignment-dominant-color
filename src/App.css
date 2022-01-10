@@ -1,6 +1,18 @@
+.parent{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  height: 50rem;
+  justify-content: center;
+}
 
+.children{
+  color: aqua;
+  height: 5rem;
+}
 
-.Pic{
-  display: grid;
-  height: 500px;
+.container {
+  display:"grid";
+  grid-template-columns : 50% 50%;
+  background-color:"red";
 }
